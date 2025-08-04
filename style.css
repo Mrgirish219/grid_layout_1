@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0.3rem;
+  box-sizing: border-box;
+}
+.grid {
+  display: grid;
+  grid-template-areas:
+    "logo logo logo logo logo"
+    "navbar navbar navbar navbar navbar"
+    "header header header header header"
+    "sidebar body body body body"
+    "sidebar body body body body"
+    "foot foot foot foot foot";
+  gap: 0.7rem;
+}
+
+.logo {
+  grid-area: logo;
+  background-color: purple;
+  padding: 1rem;
+}
+
+nav {
+  grid-area: navbar;
+  background-color: tomato;
+  padding: 1rem;
+}
+
+.header {
+  grid-area: header;
+  background-color: aquamarine;
+  padding: 1.5rem;
+}
+
+aside {
+  grid-area: sidebar;
+  background-color: rgb(238, 241, 36);
+  padding: 1rem;
+  height: 67vh;
+  column-gap: 3rem;
+  white-space: 2rem;
+}
+
+main {
+  grid-area: body;
+  background-color: violet;
+  padding: 2rem;
+}
+
+footer {
+  grid-area: foot;
+  background-color: rgb(36, 35, 35);
+  padding: 1rem;
+}
+/* .card{
+  width: 40rem;
+  height: 45rem;
+  background-color: red;
+ 
+
+} */
